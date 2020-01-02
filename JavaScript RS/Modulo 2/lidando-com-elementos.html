@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta class="utf-8">
+    </head>
+    <body>
+        <div id="app">
+            <imput id="nome" />
+        </div>
+        <script>
+            var linkElement = document.createElement('a');
+            linkElement.setAttribute('href' , 'https://www.linkedin.com/in/mikael-arthur-atala-pelluzi-51a428151/');
+            linkElement.setAttribute('title', 'Perfil do LinkedIn');
+            // criando elemento href do html através de comando js. 
+
+            var textElement = document.createTextNode('Acessar perfil');
+            linkElement.appendChild(textElement);
+            // adicionando conteudo de texto no link do href referenciando como filho do 'linkElement'.
+
+            var containerElement = document.querySelector('#app');
+            containerElement.appendChild(linkElement);
+            // criando estrutura de container para add conteudo do link referenciando como filho do 'linkElement'.
+
+            var imputElement = document.querySelector('#nome');
+            containerElement.removeChild(imputElement);
+            // removendo espaço de imput da div do html através de comando js.
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta class="utf-8">
+        <title>Cursos Javascript</title>
+    </head>
+    <body>
+        <h2>Trabalhandp com a DOM</h2>
+
+        <div id="app">
+            <input type="text" name="nome">
+            <button class="botao">Adicionar</button>
+        </div>
+
+        <script>
+            var inputElement = document.querySelector('input[name=nome]');
+            var btnElement = document.querySelector('button.botao');
+
+            btnElement.onclick = function(){
+                var text = inputElement.Value;
+                alert(text);
+            }
+
+        // Referenciando elementos da dom através do javascript
+        // através do document.querySelector é possivel gerenciar qualquer
+        // atributo HTML dentro do JS sem precisar sujar o código html.
+        </script>
+    </body>
+</html>
